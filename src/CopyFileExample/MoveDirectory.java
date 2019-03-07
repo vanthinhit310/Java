@@ -14,9 +14,6 @@ public class MoveDirectory {
         File destDir = new File(destination);
 
         try {
-            // Move the source directory to the destination directory.
-            // The destination directory must not exists prior to the
-            // move process.
             FileUtils.moveDirectory(srcDir, destDir);
             System.out.println("Copied directory successful");
         } catch (IOException e) {
